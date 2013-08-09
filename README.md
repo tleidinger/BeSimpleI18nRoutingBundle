@@ -17,21 +17,21 @@ When you create an I18N route and you go on it with your browser, the locale wil
 ### Add I18nRoutingBundle to composer.json
 
     "require": {
-        "besimple/i18n-routing-bundle": "2.3"
+        "besimple/i18n-routing-bundle": "2.3.0"
     }
     "repositories": [
         {
             "type": "package",
             "package": {
-                "version": "2.3",
+                "version": "2.3.0",
                 "name": "besimple/i18n-routing-bundle",
                 "source": {
                     "url": "https://github.com/Bilbous/BeSimpleI18nRoutingBundle.git",
                     "type": "git",
-                    "reference": "2.3"
+                    "reference": "2.3.0"
                 },
                 "dist": {
-                    "url": "https://github.com/Bilbous/BeSimpleI18nRoutingBundle/zipball/2.3",
+                    "url": "https://github.com/Bilbous/BeSimpleI18nRoutingBundle/zipball/2.3.0",
                     "type": "zip"
                 }
             }
