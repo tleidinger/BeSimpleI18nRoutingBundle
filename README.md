@@ -16,15 +16,27 @@ When you create an I18N route and you go on it with your browser, the locale wil
 
 ### Add I18nRoutingBundle to composer.json
 
+    "require": {
+        "besimple/i18n-routing-bundle": "2.3"
+    }
     "repositories": [
         {
-            "type": "vcs",
-            "url":  "git://github.com/tleidinger/BeSimpleI18nRoutingBundle.git"
+            "type": "package",
+            "package": {
+                "version": "2.3",
+                "name": "besimple/i18n-routing-bundle",
+                "source": {
+                    "url": "https://github.com/Bilbous/BeSimpleI18nRoutingBundle.git",
+                    "type": "git",
+                    "reference": "2.3"
+                },
+                "dist": {
+                    "url": "https://github.com/Bilbous/BeSimpleI18nRoutingBundle/zipball/2.3",
+                    "type": "zip"
+                }
+            }
         }
-    ],
-    "require": {
-        "besimple/i18n-routing-bundle": "dev-dev-symfony23"
-    }
+    ]
 
 ### Add I18nRoutingBundle to your application kernel
 
