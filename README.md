@@ -14,9 +14,29 @@ When you create an I18N route and you go on it with your browser, the locale wil
 
 ## Installation
 
-### Add I18nRoutingBundle to your vendor/bundles dir
+### Add I18nRoutingBundle to composer.json
 
-    git submodule add git://github.com/BeSimple/BeSimpleI18nRoutingBundle.git vendor/bundles/BeSimple/I18nRoutingBundle
+    "require": {
+        "besimple/i18n-routing-bundle": "2.3.0"
+    }
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "version": "2.3.0",
+                "name": "besimple/i18n-routing-bundle",
+                "source": {
+                    "url": "https://github.com/Bilbous/BeSimpleI18nRoutingBundle.git",
+                    "type": "git",
+                    "reference": "2.3.0"
+                },
+                "dist": {
+                    "url": "https://github.com/Bilbous/BeSimpleI18nRoutingBundle/zipball/2.3.0",
+                    "type": "zip"
+                }
+            }
+        }
+    ]
 
 ### Add I18nRoutingBundle to your application kernel
 
@@ -29,14 +49,6 @@ When you create an I18N route and you go on it with your browser, the locale wil
             // ...
         );
     }
-
-### Register the BeSimple namespace
-
-    // app/autoload.php
-    $loader->registerNamespaces(array(
-        'BeSimple' => __DIR__.'/../vendor/bundles',
-        // your other namespaces
-    ));
 
 ### Update your configuration
 
